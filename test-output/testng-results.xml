@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-06T10:02:40 IST" name="Default suite" finished-at="2022-09-06T10:03:02 IST" duration-ms="22071">
+    <groups>
+    </groups>
+    <test started-at="2022-09-06T10:02:40 IST" name="Default test" finished-at="2022-09-06T10:03:02 IST" duration-ms="22071">
+      <class name="com.qa.test.OppenheimerTest">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:40 IST" name="suiteSetup" finished-at="2022-09-06T10:02:40 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:40 IST" name="beforeMethod" finished-at="2022-09-06T10:02:40 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@573a078]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@573a078]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="insertMultipleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:40 IST" name="insertMultipleRecord_API" data-provider="UseCase2" finished-at="2022-09-06T10:02:45 IST" duration-ms="4963" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC2_Test_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify user is able insert more than one working
+Class Hero Record in DB via LocalHost API]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:3086/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/context/v2/SaveHeros]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[{"list":[{"natid": "N01", "Name": "J", "Gender": "F", "Birthday": "05091987","Salary": 500.00, "Tax_paid": 20.00},{"natid": "N02", "Name": "J", "Gender": "F", "Birthday": "05091987","Salary": 500.00, "Tax_paid": 20.00}]}]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.util.commanUtils.postCall(commanUtils.java:265)
+at com.qa.test.OppenheimerTest.insertMultipleRecord_API(OppenheimerTest.java:143)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertMultipleRecord_API -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:45 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:02:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertMultipleRecord_API status=FAILURE method=OppenheimerTest.insertMultipleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method signature="insertMultipleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:45 IST" name="insertMultipleRecord_API" data-provider="UseCase2" finished-at="2022-09-06T10:02:46 IST" duration-ms="912" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC2_Test_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify user is able insert more than one working
+DUMMY  details into DB via PUBLIC - API ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://reqres.in]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/api/users]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[{
+    "name": "morpheus",
+    "job": "leader"
+}]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at com.qa.test.OppenheimerTest.insertMultipleRecord_API(OppenheimerTest.java:149)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertMultipleRecord_API -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:45 IST" name="beforeMethod" finished-at="2022-09-06T10:02:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@28f05b0c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@28f05b0c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:46 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:02:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertMultipleRecord_API status=FAILURE method=OppenheimerTest.insertMultipleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:46 IST" name="beforeMethod" finished-at="2022-09-06T10:02:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@660296d5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@660296d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="insertSingleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:46 IST" name="insertSingleRecord_API" data-provider="UseCase1" finished-at="2022-09-06T10:02:50 IST" duration-ms="4089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC1_Test_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify user is able to insert SINGLE Class Hero Record in DB via LocalHost API]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:3086/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/context/v2/SaveHero]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[{"natid": "N01", "Name": "J", "Gender": "F", "Birthday": "05091987","Salary": 500.00, "Tax_paid": 20.00}]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.util.commanUtils.postCall(commanUtils.java:265)
+at com.qa.test.OppenheimerTest.insertSingleRecord_API(OppenheimerTest.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertSingleRecord_API -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:50 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:02:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertSingleRecord_API status=FAILURE method=OppenheimerTest.insertSingleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:50 IST" name="beforeMethod" finished-at="2022-09-06T10:02:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d3163a6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d3163a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="insertSingleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:50 IST" name="insertSingleRecord_API" data-provider="UseCase1" finished-at="2022-09-06T10:02:51 IST" duration-ms="503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC1_Test_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify user is able to insert SINGLE DUMMUY Record in DB via PUBLIC - API ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://reqres.in]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/api/users]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[{
+    "name": "morpheus",
+    "job": "leader"
+}]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertSingleRecord_API -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:51 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:02:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insertSingleRecord_API status=SUCCESS method=OppenheimerTest.insertSingleRecord_API(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:51 IST" name="beforeMethod" finished-at="2022-09-06T10:02:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@75d97e18]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@75d97e18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="uploadSingleRecordIntoDB_UI1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:51 IST" name="uploadSingleRecordIntoDB_UI1" data-provider="UseCase3" finished-at="2022-09-06T10:02:56 IST" duration-ms="5633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC3_Test_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[\src\main\resources\testData\]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[SingleRecord.csv]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadSingleRecordIntoDB_UI1 -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:56 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:02:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadSingleRecordIntoDB_UI1 status=SUCCESS method=OppenheimerTest.uploadSingleRecordIntoDB_UI1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;, [Ljava.lang.Object;)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:56 IST" name="beforeMethod" finished-at="2022-09-06T10:02:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5fdb7394]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5fdb7394]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="uploadSingleRecordIntoDB_UI1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:02:56 IST" name="uploadSingleRecordIntoDB_UI1" data-provider="UseCase3" finished-at="2022-09-06T10:03:02 IST" duration-ms="5535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OP_SIT_UC3_Test_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[\src\main\resources\testData\]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MultipleRecord.csv]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadSingleRecordIntoDB_UI1 -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:03:02 IST" name="screenshotAndDeleteCookies" finished-at="2022-09-06T10:03:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadSingleRecordIntoDB_UI1 status=SUCCESS method=OppenheimerTest.uploadSingleRecordIntoDB_UI1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:com.qa.test.OppenheimerTest@bd4dc25]" started-at="2022-09-06T10:03:02 IST" name="suiteTearDown" finished-at="2022-09-06T10:03:02 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- com.qa.test.OppenheimerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
